@@ -82,10 +82,10 @@ describe Contact do
         end
     end
 
-    #contact关联phone，callback之后是否成功生成相应的数据
-    it"has three phone numbers" do
-      expect(create(:contact).phones.count).to eq 3
-    end
+  end
 
+  #contact关联phone，callback之后是否成功生成相应的数据
+  it"has three phone numbers" do
+    expect(create(:contact).phones.count).to eq 3
   end
 end
